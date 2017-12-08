@@ -1,0 +1,31 @@
+{
+  "name": "westerdals-discord",
+  "version": "1.0.0",
+  "description": "A bot for westerdals/hk students to use :3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DJPumpkin/westerdals-discord.git"
+  },
+  "keywords": [
+    "Discord",
+    "Westerdals",
+    "HK",
+    "DJPumpkin",
+    "Toasts"
+  ],
+  "author": "Hans Ludvig Flatt-Bjornstad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DJPumpkin/westerdals-discord/issues"
+  },
+  "homepage": "https://github.com/DJPumpkin/westerdals-discord#readme",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "dotenv": "^4.0.0",
+    "node-opus": "^0.2.7"
+  }
+}
