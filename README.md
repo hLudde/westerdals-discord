@@ -1,1 +1,1 @@
-# westerdals-discord
+# westerdals discord bot :3
