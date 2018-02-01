@@ -6,9 +6,9 @@ module.exports = {
 
         //create directory if no exists
         if(!fs.existsSync(config.quotePath)){
-            fs.mkdir(config.quoteDirPath);
+            fs.mkdirSync(config.quoteDirPath);
         }
-        
+
         //command to add a qoute, currently only usable by my discord account
         if(_args[2]==="add"&&msg.author.id==="156476072777482240"){
             var quote = +_args.join(" ").length-14+" "+_args.slice(3,_args.length).join(" ")+"\n";
