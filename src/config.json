@@ -1,4 +1,5 @@
 {
     "prefix":"wst",
-    "quotePath":"src/quote/quotes"
+    "quotePath":"src/quote/quotes.txt",
+    "quoteDirPath":"src/quote/"
 }

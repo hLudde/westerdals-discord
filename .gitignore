@@ -57,8 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
-src/quote/quotes
 src/timeedit/spillProg17.txt
 src/timeedit/timeSchedule.txt
-src/quote/quotes
-src/quote/quotes
