@@ -1,7 +1,10 @@
 const Discord = require("discord.js");
-//const timeEdit = require("./timeedit/timeedit.js");
 const client = new Discord.Client();
 const config = require("./config.json");
+const fs = require("fs");
+
+//modules for custom commands
+const quoteModule = require("./modules/quote.js");
 
 //client on ready
 client.on('ready', ()=>{
@@ -26,12 +29,22 @@ client.on('message',(msg)=>{
 
     //simple help command
     if(args[1]==="help"){
-        msg.channel.sendMessage("Westerdals discord bot - avaiable commands with \""+config.prefix+"\" as prefix:\nhelp   -   Displays this page ^^");
+        msg.channel.send("Westerdals discord bot - avaiable commands with \""+config.prefix+"\" as prefix:"+
+        "\nhelp   -   Displays this page ^^"+
+        "\nquote  -   Displays a random quote");
         return;
     }
 
+    //quote command
+    if(args[1]==="quote"){
+        msg.channel.send(quoteModule.quote(args, msg));
+        return;
+    }
+
+    //TODO make command for timeschedules
+
     //default message if command was not found
-    msg.channel.sendMessage("No such command, please type \""+config.prefix+" help\" to see available commands owo");
+    msg.channel.send("No such command, please type \""+config.prefix+" help\" to see available commands owo");
 });
 
 client.login(process.env.TOKEN);

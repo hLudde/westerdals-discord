@@ -1,1 +1,4 @@
-{"prefix":"wst"}
+{
+    "prefix":"wst",
+    "quotePath":"src/quote/quotes"
+}
