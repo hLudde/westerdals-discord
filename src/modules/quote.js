@@ -5,7 +5,7 @@ module.exports = {
     quote: function(_args, msg){
 
         //create directory if no exists
-        if(!fs.existsSync(config.quotePath)){
+        if(!fs.existsSync(config.quoteDirPath)){
             fs.mkdirSync(config.quoteDirPath);
         }
 
@@ -30,10 +30,19 @@ module.exports = {
             return("Quotelist has been reset");
         }
 
+        //TODO send quote list
+        /*if(_args[2]==="list"){
+            
+        }*/
+
         //return a random quote from quotelist or a default message
         var lengthOfQuote;
         var quotes = [];
-        var data = fs.readFileSync(config.quotePath,"utf8");
+        try{
+            var data = fs.readFileSync(config.quotePath,"utf8");
+        }catch(err){
+            return "There is no quotes to quote :/";
+        }
         if(!data){
             return "There is no quotes to quote :/";
         }
