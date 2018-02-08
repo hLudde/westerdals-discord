@@ -7,7 +7,7 @@ atm så er det ganske lite her, men her er noen planer
 
 - [ ] Timeplan for alle studiene
 - [ ] Musikkbot
-- [ ] Quotes
+- [x] Quotes
 - [ ] jeg skal komme på flere ideer
 - [ ] jeg lover :3
 
